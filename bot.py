@@ -41,12 +41,6 @@ async def nick(ctx, member: discord.Member, *,newname: str):
     else: 
         await ctx.send("Don't  have permissions to change nicknames")
 
-# @client.command()
-# async def giveRole(ctx, member: discord.Member, role: discord.Role):
-#     if ctx.author.has_role("Admin" or "Mod"):
-#         await member.add_roles(role)
-#     else: 
-#         await ctx.send("Don't have permission to give that role")
     
 @client.command(pass_context=True)
 @commands.has_role("Admin") # This must be exactly the name of the appropriate role
