@@ -169,4 +169,5 @@ async def help(ctx):
     embed.add_field(name=">unban [username in string form]", value="To unban a member", inline=False)
     await ctx.send(embed=embed)
 
-client.run("TOKEN")
+TOKEN=os.environ['TOKEN']
+client.run(TOKEN)
